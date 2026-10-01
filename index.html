@@ -2,56 +2,127 @@
 
 <html>
 <head>
-    <title>My Web Development Labs</title>
+    <title>Zunaira Web Development - Lab Work</title>
+
 <style>
+    * {
+        box-sizing: border-box;
+    }
+
     body {
         font-family: Arial;
-        background-color: lightyellow;
+        background: linear-gradient(135deg, #f5efff, #e8dcff);
         text-align: center;
         padding: 50px;
+        margin: 0;
+        color: #3f2866;
     }
 
     h1 {
-        color: darkgreen;
+        color: #5b2a86;
         font-size: 35px;
+        letter-spacing: 2px;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+    }
+
+    h2 {
+        color: #7b3fb5;
+        font-size: 30px;
+        margin-top: 0;
+        letter-spacing: 1px;
     }
 
     p {
-        color: #555;
+        color: #665777;
         font-size: 18px;
+    }
+
+    .tech-line {
+        width: 90px;
+        height: 4px;
+        background: linear-gradient(90deg, #8e5bd6, #c59cff);
+        margin: 20px auto;
+        border-radius: 10px;
     }
 
     .container {
         display: flex;
         justify-content: center;
-        gap: 30px;
+        gap: 35px;
         margin-top: 40px;
     }
 
     .lab {
         background-color: white;
-        width: 250px;
-        padding: 25px;
-        border-radius: 15px;
-        box-shadow: 0 4px 10px gray;
+        width: 350px;
+        padding: 30px;
+        border-radius: 20px;
+        border: 1px solid #dfcdf9;
+        box-shadow: 0 12px 28px rgba(91, 42, 134, 0.16);
+        transition: 0.3s;
     }
 
-    .lab h2 {
-        color: darkgreen;
+    .lab:hover {
+        transform: translateY(-7px);
+        box-shadow: 0 18px 35px rgba(91, 42, 134, 0.22);
+    }
+
+    .lab h3 {
+        color: #5b2a86;
+        font-size: 27px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    .icon {
+        width: 65px;
+        height: 65px;
+        margin: 0 auto 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 16px;
+        background-color: #f0e5ff;
+        color: #6f3aa3;
+        font-size: 25px;
+        font-weight: bold;
+        border: 1px solid #ddc7f7;
     }
 
     .lab a {
         display: inline-block;
-        background-color: darkgreen;
+        background: linear-gradient(135deg, #6f3aa3, #8d55c7);
         color: white;
-        padding: 12px 20px;
+        padding: 13px 25px;
         text-decoration: none;
-        border-radius: 8px;
+        border-radius: 9px;
         margin-top: 15px;
+        font-size: 16px;
+        font-weight: bold;
+        box-shadow: 0 6px 14px rgba(111, 58, 163, 0.25);
+        transition: 0.2s;
     }
 
     .lab a:hover {
-        background-color: green;
+        transform: translateY(-2px);
+        box-shadow: 0 9px 18px rgba(111, 58, 163, 0.35);
+    }
+
+    @media (max-width: 800px) {
+        .container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .lab {
+            width: 90%;
+            max-width: 350px;
+        }
+
+        body {
+            padding: 35px 15px;
+        }
     }
 </style>
 
@@ -59,28 +130,45 @@
 
 <body>
 
-<h1>🌸 My Web Development Labs 🌸</h1>
+<h1>ZUNAiRA WEB DEVELOPMENT</h1>
+
+<h2>LAB WORK</h2>
 
 <p>Welcome to my Web Development Lab Portfolio</p>
+
+<div class="tech-line"></div>
 
 <div class="container">
 
     <div class="lab">
-        <h2>💻 Lab 1</h2>
+
+        <div class="icon">&lt;/&gt;</div>
+
+        <h3>Lab 1</h3>
+
         <p>My first Web Development Lab</p>
 
-        <a href="https://zunaira-ahmed1115.github.io/WebTechLab/1.html">View Lab 1</a>
+        <a href="https://zunaira-ahmed1115.github.io/WebTechLab/1.html">
+            VIEW LAB 1
+        </a>
+
     </div>
 
     <div class="lab">
-        <h2>🌍 Lab 2</h2>
+
+        <div class="icon">{ }</div>
+
+        <h3>Lab 2</h3>
+
         <p>Beautiful Places of Pakistan</p>
 
-        <a href="https://zunaira-ahmed1115.github.io/WebTechLab/2.html">View Lab 2</a>
+        <a href="https://zunaira-ahmed1115.github.io/WebTechLab/2.html">
+            VIEW LAB 2
+        </a>
+
     </div>
 
 </div>
 
 </body>
 </html>
-
